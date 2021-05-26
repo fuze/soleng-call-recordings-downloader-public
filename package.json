@@ -18,6 +18,10 @@
       "releaseType": "release"
     }
   },
+  "github": {
+    "release": true,
+    "assets": ["dist/*/*"]
+  },
   "scripts": {
     "test": "node_modules/.bin/tape test/*.js | node_modules/.bin/tap-spec",
     "clean-package-release": "npm run clean-dist && npm run package && npm run release",
