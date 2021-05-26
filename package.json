@@ -20,7 +20,7 @@
   },
   "scripts": {
     "test": "node_modules/.bin/tape test/*.js | node_modules/.bin/tap-spec",
-    "package-and-release": "npm run clean-dist && npm run package && npm run release",
+    "clean-package-release": "npm run clean-dist && npm run package && npm run release",
     "clean-dist": "rm -rf ./dist",
     "package": "npx pkg ./cli.js --out-path=dist/terminal",
     "release": "release-it --no-npm.publish"
